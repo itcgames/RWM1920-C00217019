@@ -6,7 +6,8 @@ public class portalCollision : MonoBehaviour {
 
 	public Transform SpawnPoint;
 
-	void OnTriggerEnter(Collider otherObject){
-		otherObject.gameObject.transform.position = SpawnPoint.position;
+    void OnTriggerEnter2D(Collider2D col) { 
+
+        col.gameObject.transform.position = SpawnPoint.position;
 	}
 }
