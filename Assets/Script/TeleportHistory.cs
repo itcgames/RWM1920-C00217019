@@ -7,6 +7,7 @@ public class TeleportHistory : MonoBehaviour
     private List<GameObject> teleportHistory = new List<GameObject>();
     private List<float> listTimeout = new List<float>();
     public float teleportTimeout = 0.5f; //Objects have a 0.5 second cool down before they can be teleported again.
+    public bool limitToRigidBodies = true;
 
 
     public bool History(Collider2D col)

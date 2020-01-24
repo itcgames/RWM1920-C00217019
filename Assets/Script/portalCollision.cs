@@ -15,10 +15,24 @@ public class portalCollision : MonoBehaviour {
 
     public void PullTrigger(Collider2D col)
     {
-        if (gameObject.GetComponentInParent<TeleportHistory>().History(col))
+        if (gameObject.GetComponentInParent<TeleportHistory>().limitToRigidBodies)
         {
-            col.gameObject.transform.position = SpawnPoint.position;
-            m_source.PlayOneShot(m_portalSFX);
+            if(col.GetComponent<Rigidbody2D>() != null)
+            {
+                if (gameObject.GetComponentInParent<TeleportHistory>().History(col))
+                {
+                    col.gameObject.transform.position = SpawnPoint.position;
+                    m_source.PlayOneShot(m_portalSFX);
+                }
+            }
+        }
+        else
+        {
+            if (gameObject.GetComponentInParent<TeleportHistory>().History(col))
+            {
+                col.gameObject.transform.position = SpawnPoint.position;
+                m_source.PlayOneShot(m_portalSFX);
+            }
         }
 
     }
@@ -28,10 +42,24 @@ public class portalCollision : MonoBehaviour {
 
     public void PullTrigger(Collider col)
     {
-        if (gameObject.GetComponentInParent<TeleportHistory>().History(col))
+        if (gameObject.GetComponentInParent<TeleportHistory>().limitToRigidBodies)
         {
-            col.gameObject.transform.position = SpawnPoint.position;
-            m_source.PlayOneShot(m_portalSFX);
+            if (col.GetComponent<Rigidbody>() != null)
+            {
+                if (gameObject.GetComponentInParent<TeleportHistory>().History(col))
+                {
+                    col.gameObject.transform.position = SpawnPoint.position;
+                    m_source.PlayOneShot(m_portalSFX);
+                }
+            }
+        }
+        else
+        {
+            if (gameObject.GetComponentInParent<TeleportHistory>().History(col))
+            {
+                col.gameObject.transform.position = SpawnPoint.position;
+                m_source.PlayOneShot(m_portalSFX);
+            }
         }
     }
 
