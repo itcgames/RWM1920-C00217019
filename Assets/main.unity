@@ -498,7 +498,87 @@ PrefabInstance:
     - target: {fileID: 5590665864361018478, guid: da4d6f3ebfde5954a804e4773012cf66,
         type: 3}
       propertyPath: teleportTimeout
-      value: 50
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3493231353366876628, guid: da4d6f3ebfde5954a804e4773012cf66,
+        type: 3}
+      propertyPath: PortalAEndpoint.x
+      value: 999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3493231353366876628, guid: da4d6f3ebfde5954a804e4773012cf66,
+        type: 3}
+      propertyPath: PortalAEndpoint.y
+      value: 999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3493231353366876628, guid: da4d6f3ebfde5954a804e4773012cf66,
+        type: 3}
+      propertyPath: PortalAEndpoint.z
+      value: 999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3493231353366876628, guid: da4d6f3ebfde5954a804e4773012cf66,
+        type: 3}
+      propertyPath: PortalASpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3493231353366876628, guid: da4d6f3ebfde5954a804e4773012cf66,
+        type: 3}
+      propertyPath: PortalBSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3493231353366876628, guid: da4d6f3ebfde5954a804e4773012cf66,
+        type: 3}
+      propertyPath: PortalBEndpoint.x
+      value: 999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3493231353366876628, guid: da4d6f3ebfde5954a804e4773012cf66,
+        type: 3}
+      propertyPath: PortalBEndpoint.y
+      value: 999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3493231353366876628, guid: da4d6f3ebfde5954a804e4773012cf66,
+        type: 3}
+      propertyPath: Patrolling
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3493231353366876628, guid: da4d6f3ebfde5954a804e4773012cf66,
+        type: 3}
+      propertyPath: PortalCEndpoint.x
+      value: 999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3493231353366876628, guid: da4d6f3ebfde5954a804e4773012cf66,
+        type: 3}
+      propertyPath: PortalCEndpoint.y
+      value: 999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3493231353366876628, guid: da4d6f3ebfde5954a804e4773012cf66,
+        type: 3}
+      propertyPath: PortalCEndpoint.z
+      value: 999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3493231353366876628, guid: da4d6f3ebfde5954a804e4773012cf66,
+        type: 3}
+      propertyPath: PortalBEndpoint.z
+      value: 999
+      objectReference: {fileID: 0}
+    - target: {fileID: 2761161299071536803, guid: da4d6f3ebfde5954a804e4773012cf66,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 2761161299071536803, guid: da4d6f3ebfde5954a804e4773012cf66,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 13.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 9024871339459125300, guid: da4d6f3ebfde5954a804e4773012cf66,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 9024871339459125300, guid: da4d6f3ebfde5954a804e4773012cf66,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da4d6f3ebfde5954a804e4773012cf66, type: 3}
