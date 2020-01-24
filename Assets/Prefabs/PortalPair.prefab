@@ -160,7 +160,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5590665864361018464}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.87, y: 3.223071, z: 0.0061034076}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5590665864746191636}
@@ -195,10 +195,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 778da988c92c6fc4d9e57065b044ba1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PortalAEndpoint: {x: 0, y: 0, z: 0}
-  PortalBEndpoint: {x: 0, y: 0, z: 0}
-  PortalASpeed: 0.2
-  PortalBSpeed: 0.2
+  PortalAEndpoint: {x: 999, y: 999, z: 999}
+  PortalBEndpoint: {x: 999, y: 999, z: 999}
+  Patrolling: 0
+  PortalASpeed: 1
+  PortalBSpeed: 1
 --- !u!1 &5590665864746191639
 GameObject:
   m_ObjectHideFlags: 0

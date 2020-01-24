@@ -41,10 +41,10 @@ public class PortalPatrol : MonoBehaviour
 
             if (m_portalAGoingToEnd)//Portal A is moving to the end.
             {
-                transform.GetChild(0).transform.position = Vector2.MoveTowards(transform.GetChild(0).transform.position, PortalAEndpoint, step);
+                transform.GetChild(0).transform.position = Vector3.MoveTowards(transform.GetChild(0).transform.position, PortalAEndpoint, step);
 
                 // Check if the positions are within the clearance range.
-                if (Vector2.Distance(transform.GetChild(0).transform.position, PortalAEndpoint) < m_clearance)
+                if (Vector3.Distance(transform.GetChild(0).transform.position, PortalAEndpoint) < m_clearance)
                 {
 
                     m_portalAGoingToEnd = !m_portalAGoingToEnd;//Portal A is now moving back to the start.
@@ -53,10 +53,10 @@ public class PortalPatrol : MonoBehaviour
             }
             else
             {
-                transform.GetChild(0).transform.position = Vector2.MoveTowards(transform.GetChild(0).transform.position, m_portalAStartPos, step);
+                transform.GetChild(0).transform.position = Vector3.MoveTowards(transform.GetChild(0).transform.position, m_portalAStartPos, step);
 
                 // Check if the positions are within the clearance range.
-                if (Vector2.Distance(transform.GetChild(0).transform.position, m_portalAStartPos) < m_clearance)
+                if (Vector3.Distance(transform.GetChild(0).transform.position, m_portalAStartPos) < m_clearance)
                 {
 
                     m_portalAGoingToEnd = !m_portalAGoingToEnd;
@@ -65,10 +65,10 @@ public class PortalPatrol : MonoBehaviour
 
             if (m_portalBGoingToEnd)//Portal B is moving to the Endpoint
             {
-                transform.GetChild(1).transform.position = Vector2.MoveTowards(transform.GetChild(1).transform.position, PortalBEndpoint, step);
+                transform.GetChild(1).transform.position = Vector3.MoveTowards(transform.GetChild(1).transform.position, PortalBEndpoint, step);
 
                 // Check if the positions are within the clearance range.
-                if (Vector2.Distance(transform.GetChild(1).transform.position, PortalBEndpoint) < m_clearance)
+                if (Vector3.Distance(transform.GetChild(1).transform.position, PortalBEndpoint) < m_clearance)
                 {
 
                     m_portalBGoingToEnd = !m_portalBGoingToEnd;//Portal B is now moving back to the start.
@@ -77,10 +77,10 @@ public class PortalPatrol : MonoBehaviour
             }
             else
             {
-                transform.GetChild(1).transform.position = Vector2.MoveTowards(transform.GetChild(1).transform.position, m_portalBStartPos, step);
+                transform.GetChild(1).transform.position = Vector3.MoveTowards(transform.GetChild(1).transform.position, m_portalBStartPos, step);
 
                 // Check if the positions are within the clearance range.
-                if (Vector2.Distance(transform.GetChild(1).transform.position, m_portalBStartPos) < m_clearance)
+                if (Vector3.Distance(transform.GetChild(1).transform.position, m_portalBStartPos) < m_clearance)
                 {
 
                     m_portalBGoingToEnd = !m_portalBGoingToEnd;
