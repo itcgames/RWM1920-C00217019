@@ -63,8 +63,10 @@ public class PortalPatrol : MonoBehaviour
                 }
             }
 
+            step = PortalBSpeed * Time.deltaTime;
             if (m_portalBGoingToEnd)//Portal B is moving to the Endpoint
             {
+                
                 transform.GetChild(1).transform.position = Vector3.MoveTowards(transform.GetChild(1).transform.position, PortalBEndpoint, step);
 
                 // Check if the positions are within the clearance range.
